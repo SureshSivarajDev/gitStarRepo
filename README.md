@@ -1,12 +1,81 @@
-# React + Vite
+# 🔥 GitHub Trending Repositories Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive React application that displays the most starred GitHub repositories created in the last 10 days. Built with modern tools and best practices, the app includes infinite scrolling and clean UI optimized for both desktop and mobile.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📦 Fetches top-starred GitHub repositories created after a recent date
+- 📃 Lists repositories with:
+  - Repository name
+  - Description
+  - Star count
+  - Owner’s username and avatar
+- 🔁 Infinite scroll to load more results
+- 📱 Fully responsive for mobile devices
+- ⚡ Built with Vite for fast builds and lightweight dev server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Demo
+
+> _Coming Soon: Add your deployed link here after publishing to Netlify, Vercel, or GitHub Pages_
+
+---
+
+## 🛠️ Getting Started (Local Setup)
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/github-repos-app.git
+cd github-repos-app
+2. Install dependencies
+bash
+npm install
+3. Start development server
+bash
+npm run dev
+Open http://localhost:5173 in your browser
+
+🌐 API Used
+GitHub Search Repositories API
+Query used:
+
+sql
+Copy
+Edit
+https://api.github.com/search/repositories?q=created:>2024-07-15&sort=stars&order=desc&page=1
+📦 Deployment Tips
+Deploy to Vercel (recommended)
+Go to https://vercel.com and import your GitHub repo.
+
+Set build command: npm run build
+
+Set output directory: dist
+
+Or Deploy to Netlify
+Drag & drop dist/ after build.
+
+Or connect repo > set build: npm run build and publish dir: dist
+
+📁 Project Structure
+css
+Copy
+Edit
+src/
+├── components/
+│   ├── RepoItem.jsx
+│   └── RepoList.jsx
+├── App.jsx
+└── main.jsx
+👨‍💻 Author
+Suresh Sivaraj
+GitHub | LinkedIn (Add your profile)
+
+📄 License
+This project is open source and available under the MIT License.
+
+yaml
+Copy
+Edit
